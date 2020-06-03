@@ -10,8 +10,6 @@ async function run() {
 
     const client = new github.GitHub(token)
     const config: Config = { assignees: [assignee] }
-
-    core.debug(`Config ${JSON.stringify(config)}`)
     const pullRequestService = new PullRequestService(
       client,
       github.context,
