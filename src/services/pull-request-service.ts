@@ -16,7 +16,7 @@ export class PullRequestService {
 
     async performAssignment() {
         if (!this.context.payload.pull_request) {
-            throw new Error('the webhook payload does not exist')
+            throw new Error('The web hook payload does not exist')
         }
         const {draft, number} = this.context.payload.pull_request
 
