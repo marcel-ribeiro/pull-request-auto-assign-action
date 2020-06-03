@@ -21,12 +21,9 @@ export class PullRequestService {
         const {draft, number} = this.context.payload.pull_request
 
         if (draft) {
-            core.info(
-                'Skips the process to add assignees because PR type is still in draft'
-            )
+            core.info('Skips the process to add assignees because PR type is still in draft')
             return
         }
-
 
         try {
             const assignees = this.config.assignees
