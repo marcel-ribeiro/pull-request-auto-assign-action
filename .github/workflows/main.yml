@@ -3,7 +3,7 @@ on: [pull_request]
 jobs:
   pull-request-auto-assign:
     runs-on: ubuntu-latest
-    name: Pull Request auto-assignment
+    name: Pull Request auto-assignment 3
     steps:
       - uses: marcel-ribeiro/pull-request-auto-assign-action@1.0.3-SNAPSHOT
         with:
