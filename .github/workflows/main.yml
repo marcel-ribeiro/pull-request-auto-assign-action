@@ -8,7 +8,7 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: marcel-ribeiro/pull-request-auto-assign-action@v1.0.0
+        uses: marcel-ribeiro/pull-request-auto-assign-action@1.0.0-SNAPSHOT
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello

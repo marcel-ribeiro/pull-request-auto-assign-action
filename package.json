@@ -1,6 +1,6 @@
 {
   "name": "pull-request-auto-assign-action",
-  "version": "1.0.0",
+  "version": "1.0.0-SNAPSHOT",
   "description": "Github action to auto-assigns Pull Requests based on configurations",
   "main": "index.js",
   "scripts": {
