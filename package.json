@@ -9,7 +9,7 @@
   "main": "src/main.js",
   "scripts": {
     "build": "tsc",
-    "pack": "ncc build",
+    "pack": "ncc build --minify --no-cache ",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
     "all": "npm run build && npm run format && npm run pack"

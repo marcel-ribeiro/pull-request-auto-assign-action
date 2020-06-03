@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Pull Request auto-assignment
         id: perform-assignment
-        uses: marcel-ribeiro/pull-request-auto-assign-action@1.0.0-SNAPSHOT
+        uses: marcel-ribeiro/pull-request-auto-assign-action@1.0.2-SNAPSHOT
         with:
           assignee: 'marcel-ribeiro'
