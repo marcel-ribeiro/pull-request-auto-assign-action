@@ -1,15 +1,12 @@
-on: [push]
+on: [pull_request]
 
 jobs:
-  hello_world_job:
+  pull-request-auto-assign:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Pull Request auto-assignment
     steps:
-      - name: Hello world action step
-        id: hello
+      - name: Pull Request auto-assignment
+        id: perform-assignment
         uses: marcel-ribeiro/pull-request-auto-assign-action@1.0.0-SNAPSHOT
         with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          assignee: 'marcel-ribeiro'
