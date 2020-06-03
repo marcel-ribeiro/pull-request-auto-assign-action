@@ -6,11 +6,13 @@
     "type": "git",
     "url": "git+https://github.com/marcel-ribeiro/pull-request-auto-assign-action.git"
   },
-  "main": "dist/index.js",
+  "main": "src/main.js",
   "scripts": {
-    "build": "ncc build",
+    "build": "tsc",
+    "pack": "ncc build",
     "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts"
+    "format-check": "prettier --check **/*.ts",
+    "all": "npm run build && npm run format && npm run pack"
   },
   "author": "Marcel Ribeiro",
   "license": "MIT",
@@ -21,12 +23,10 @@
   "dependencies": {
     "@actions/core": "^1.2.4",
     "@actions/github": "^2.2.0",
-    "js-yaml": "^3.13.1",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
-    "@types/js-yaml": "^3.12.1",
     "@types/lodash": "^4.14.141",
     "@types/node": "^12.7.8",
     "husky": "^3.0.8",
