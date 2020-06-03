@@ -1,0 +1,24 @@
+{
+  "name": "pull-request-auto-assign-action",
+  "version": "1.0.0",
+  "description": "Github action to auto-assigns Pull Requests based on configurations",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcel-ribeiro/pull-request-auto-assign-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcel-ribeiro/pull-request-auto-assign-action/issues"
+  },
+  "homepage": "https://github.com/marcel-ribeiro/pull-request-auto-assign-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.2.0"
+  }
+}
